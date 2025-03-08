@@ -53,7 +53,7 @@ export default function LogosSection() {
       className="logos-carousel bg-[#F2F2F2]"
     >
       <SwiperSlide className="!flex justify-center text-5xl py-6 md:py-8 lg:py-10 w-full">
-        MASTER MIND GAME
+        MASTERMIND 
       </SwiperSlide>
       <SwiperSlide className="!flex justify-center text-5xl py-6 md:py-8 lg:py-10 w-full">
         MASTERMIND 

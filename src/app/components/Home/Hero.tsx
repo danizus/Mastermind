@@ -36,7 +36,7 @@ export default function Hero() {
         </div>
         <div className="mx-auto max-w-screen-xl py-32 sm:py-36 md:py-40 lg:py-48 xl:py-60 2xl:py-72">
           <h1 className="lg::min-h-[120] min-h-[75px] text-center text-3xl font-bold !leading-tight md:min-h-[90px] md:text-4xl lg:text-5xl xl:min-h-[210px] xl:text-9xl">
-            <TypewriterText>Mastermind </TypewriterText>
+            <TypewriterText>Mastermind Game </TypewriterText>
           </h1>
           <div className="flex justify-center items-center">
             <CustomButton
