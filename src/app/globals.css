@@ -1,0 +1,398 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 50, 57, 255;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.qodef-m-background-grid-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  --qode-grid-lines-color: #1b3942;
+}
+
+.qodef-m-background-grid-lines .qodef-m-background-grid-line {
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: var(--qode-grid-lines-color);
+  --qode-line-decoration-color: #a2b0b3;
+  overflow: hidden;
+}
+
+.qodef-m-background-grid-lines .qodef-m-background-grid-line:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 15vh;
+  width: 1px;
+  --qode-end-pos: 115vh;
+  --qode-dur: 6s;
+  --qode-end-pos: 115vh;
+  --qode-dur: 6s;
+  transform: translateY(-15vh);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0,
+    var(--qode-grid-lines-decoration-color, var(--qode-line-decoration-color))
+      50%,
+    var(--qode-grid-lines-decoration-color, var(--qode-line-decoration-color))
+      90%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: qode-drop var(--qode-dur) infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.4, 0.26, 0.16, 0.98);
+}
+
+.qodef-m-background-grid-lines
+  .qodef-m-background-grid-line:nth-child(1):after {
+  animation-delay: 1.8s;
+}
+
+.qodef-m-background-grid-lines
+  .qodef-m-background-grid-line:nth-child(3n + 3):after {
+  animation-delay: 2.3s;
+}
+
+.qodef-m-background-grid-lines
+  .qodef-m-background-grid-line:nth-child(4n + 4):after {
+  animation-delay: 0.8s;
+}
+
+@keyframes qode-drop {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: 100%;
+  }
+}
+
+.site-logo svg {
+  max-width: 100%;
+}
+
+.pulse-updown {
+  animation: pulse-updown 2s infinite linear;
+}
+
+.group:hover .pulse-updown {
+  /* animation-play-state: paused; */
+}
+
+@keyframes pulse-updown {
+  0% {
+    margin-top: -8px;
+    scale: 1;
+  }
+  25% {
+    margin-top: 0;
+    scale: 1.1;
+  }
+  50% {
+    margin-top: 8px;
+    scale: 1;
+  }
+  75% {
+    margin-top: 0;
+    scale: 0.9;
+  }
+  100% {
+    margin-top: -8px;
+    scale: 1;
+  }
+}
+
+.video-section {
+  background-image: linear-gradient(to bottom, #fff 55%, #17191b 55%);
+}
+
+.process-section {
+  background-image: url("../assets/images/compressed/37465890164951834.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*.portfolio-section .portfolio-item {
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.portfolio-section .portfolio-item .img-wrap {
+  transition: 0.3s ease-in-out;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.portfolio-section .portfolio-item:hover .img-wrap {
+  clip-path: polygon(5% 10%, 100% 2%, 100% 98%, 5% 98%);
+}*/
+
+.portfolio-section .portfolio-item .img-wrap img {
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio-section .portfolio-item:hover .img-wrap img {
+  box-shadow: 0px 24px 53px 0px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials-section .swiper-vertical > .swiper-pagination-bullets,
+.testimonials-section .swiper-pagination-vertical.swiper-pagination-bullets {
+  top: 0;
+  transform: none;
+}
+
+.testimonials-section .swiper-pagination-clickable .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin: 30px 0 !important;
+  transition: 0.3s ease-in-out;
+}
+
+.testimonials-section
+  .swiper-pagination-clickable
+  .swiper-pagination-bullet:hover,
+.testimonials-section
+  .swiper-pagination-clickable
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: white;
+  box-shadow: 0px 0px 0px 10px rgba(77, 83, 255, 0.7);
+  opacity: 1;
+}
+
+.culture-background {
+  background-image: url("../assets/images/compressed/linebackground.webp");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.petshack-hero {
+  background-image: url("../assets/images/compressed/Intersect.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.petshack-section-bg {
+  background-image: url("../assets/images/compressed/img-background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hifi-wireframe {
+  background-image: url("../assets/images/compressed/hifi-wireframe.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.interface-background {
+  background-image: url("../assets/images/compressed/userinterfacebg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.homeloop-bg {
+  background-image: url("../assets/images/compressed/homeloop-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.montain-bg {
+  background-image: url("../assets/images/compressed/backgroundhouse.webp");
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.user-persona-bg {
+  background-image: url("../assets/images/compressed/userPersonaBg.webp");
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.background-house {
+  background-image: url("../assets/images/compressed/image-section2.webp");
+  background-repeat: no-repeat;
+  background-size: 45%;
+  background-position: left bottom;
+}
+
+.flexi-clean-hero {
+  background-image: url("../assets/images/compressed/flexi-clean-herobg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-statement-bg {
+  background-image: url("../assets/images/compressed/project-statement-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.design-process {
+  background-color: #17191b;
+}
+
+.ui-app-bg {
+  background-image: url("../assets/images/compressed/ui-app-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.ui-dashboard {
+  background-image: url("../assets/images/compressed/uiDashboardbg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.project-overview {
+  background-image: url("../assets/images/compressed/puppies.webp");
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensures the image always covers the container */
+  background-position: center top; /* Adjust position as needed */
+}
+
+/* For larger screens */
+@media only screen and (min-width: 1000px) {
+  .project-overview {
+    background-position: center;
+    background-size: 80%;
+  }
+}
+
+/* For smaller screens */
+@media only screen and (max-width: 600px) {
+  .project-overview {
+    background-size: cover;
+    background-position: center center;
+  }
+}
+.portfolio-item:hover .portfolio-inner {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.logos-carousel {
+  &.swiper.swiper-initialized > .swiper-wrapper {
+    transition-timing-function: linear;
+  }
+}
+
+.effect-bg {
+  background: linear-gradient(to right, #26282a 0%, #181a1c 50%, #282a2c 100%);
+}
+
+.steps-bg {
+  background: linear-gradient(to right, #282a2c 0%, #17191b 60%);
+}
+
+.active {
+  color: #ffffff !important;
+  display: block !important;
+}
+
+.site-header {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+.content {
+  background-color: red;
+  display: flex !important;
+  justify-content: center !important;
+  }
