@@ -146,7 +146,11 @@ export default function Testimonials2() {
           <p className="mb-8 font-light text-[#FFFFFF] md:text-sm lg:text-base xl:text-xl ">
             Team lead, a React.js developer with 1.5 years of experience, led
             the Mastermind game project with strong leadership skills, believing
-            that "With great power comes great responsibility".
+            that{" "}
+            <b>
+              <i>With great power comes great responsibility</i>
+            </b>
+            .
           </p>
           <div className="flex items-center gap-4">
             <div>
@@ -370,7 +374,11 @@ export default function Testimonials2() {
               <p className="text-xs font-light text-[#FFFFFF] ">
                 Team lead, a React.js developer with 1.5 years of experience,
                 led the Mastermind game project with strong leadership skills,
-                believing that "With great power comes great responsibility.
+                believing that{" "}
+                <b>
+                  <i>With great power comes great responsibility</i>
+                </b>
+                .
               </p>
               <div className="flex items-center gap-4">
                 <div>
@@ -420,12 +428,11 @@ export default function Testimonials2() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex h-[250px] flex-col justify-around rounded-[8px] border-[1px] border-solid border-[#FFFFFF66] bg-[#4248FE] p-4">
-              <p className="mb-12 text-xs font-light text-[#FFFFFF]">
-                I’m a frontend developer with a passion for building engaging
-                digital experiences. With hands-on experience in web development
-                and a game development internship where I worked with Unity and
-                C++, I love bringing ideas to life—whether it’s an interactive
-                website or an exciting game.
+              <p className="mb-5 text-xs font-light text-[#FFFFFF]">
+                I'm a frontend developer passionate about creating engaging
+                digital experiences. With experience in web development and a
+                game development internship using Unity and C++, I enjoy
+                bringing ideas to life through interactive websites and games.
               </p>
               <div className="flex items-center gap-4">
                 <div>
@@ -450,13 +457,9 @@ export default function Testimonials2() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex h-[250px] flex-col justify-around rounded-[8px] border-[1px] border-solid border-[#FFFFFF66] bg-[#4248FE] p-4">
-              <p className="mb-12 text-sm font-light text-[#FFFFFF]">
-                I’m a game developer passionate about creating immersive
-                experiences. With hands-on experience in Unity and a game
-                development internship, I’ve worked on various projects that
-                bring ideas to life through engaging gameplay. I’ve also
-                contributed to a website project, combining my skills in game
-                and web development.
+              <p className="mb-5 text-sm font-light text-[#FFFFFF]">
+                I'm a game developer with Unity experience, passionate about
+                immersive gameplay and web development.
               </p>
               <div className="flex items-center gap-4">
                 <div>
@@ -482,9 +485,10 @@ export default function Testimonials2() {
           <SwiperSlide>
             <div className="flex h-[250px] flex-col justify-around rounded-[8px] border-[1px] border-solid border-[#FFFFFF66] bg-[#4248FE] p-4">
               <p className="mb-12 text-xs font-light text-[#FFFFFF]">
-                A Full Stack MERN Developer with 1.5 years of experience,
-                playing a key role in the team by building scalable and dynamic
-                web applications.
+                Junior Web Developer with hands-on experience in building
+                dynamic web applications using Node.js and Angular. Passionate
+                about creating interactive user experiences and refining
+                full-stack development skills.
               </p>
               <div className="flex items-center gap-4">
                 <div>
@@ -498,7 +502,7 @@ export default function Testimonials2() {
                 </div>
                 <div>
                   <h3 className="text-sm font-medium text-[#FFFFFF]">
-                    Muhammad Hammad kamal
+                    Areesha Abdullah
                   </h3>
                   <p className="text-xs font-light text-[#FFFFFF]">
                     Fullstack developer
@@ -510,11 +514,9 @@ export default function Testimonials2() {
           <SwiperSlide>
             <div className="flex h-[250px] flex-col justify-around rounded-[8px] border-[1px] border-solid border-[#FFFFFF66] bg-[#4248FE] p-4">
               <p className="mb-12 text-xs font-light text-[#FFFFFF]">
-                As a UI/UX Developer, I designed a clean and interactive
-                interface for the Mastermind game using CSS. I focused on
-                spacing, button responsiveness, and readability to enhance user
-                experience. My goal was to create a visually appealing and
-                easy-to-use game layout.
+                As a UI/UX Developer, I designed a clean, interactive Mastermind
+                game interface using CSS, focusing on spacing, responsiveness,
+                and readability.
               </p>
               <div className="flex items-center gap-4">
                 <div>

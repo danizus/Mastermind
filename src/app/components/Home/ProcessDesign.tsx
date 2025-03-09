@@ -21,7 +21,7 @@ export default function ProcessDesign() {
             <AnimatedTitleOnScroll leftText="Technology" rightText="Stack" />
           </div>
           <div className="col-span-2  md:hidden">
-            <p className="text-xl font-bold">Process driven design</p>
+            <p className="text-xl font-bold">Technology Stack</p>
           </div>
         </div>
         <div className="grid-items-start grid pt-12 text-black md:grid-cols-2 md:text-white lg:grid-cols-3 lg:pt-20 xl:pt-24 2xl:pt-32">

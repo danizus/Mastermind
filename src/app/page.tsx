@@ -97,7 +97,7 @@ export default function Home() {
                 <AnimatedTitleOnScroll leftText="OUR" rightText="TEAM" />
               </div>
               <div className="col-span-2  md:hidden">
-                <p className="text-xl font-bold">And also they love us</p>
+                <p className="text-xl font-bold">OUR TEAM</p>
               </div>
             </div>
             <Testimonials2 />
@@ -208,7 +208,7 @@ export default function Home() {
         </section>
 
         <section className="relative py-6 md:py-24 lg:py-28 xl:py-32 2xl:py-36">
-          <Marquee className="mb-20 md:mb-24 lg:mb-28 xl:mb-32 2xl:mb-36">
+          <Marquee className="mb-10 md:mb-24 lg:mb-28 xl:mb-32 2xl:mb-36">
             <div className="flex items-center gap-20">
               <div className="relative mx-5 h-[40px] w-[1798px] lg:mx-10 lg:h-[50px] 2xl:mx-20 2xl:h-[96px]">
                 <Image
@@ -223,10 +223,10 @@ export default function Home() {
               </div>
             </div>
           </Marquee>
-          <div className="container">
-            <div className="mx-auto max-w-5xl text-center">
+          <div className="container ">
+            <div className="mx-auto max-w-5xl text-center ">
              
-               <div className="relative w-[100%] h-[600px] mb-10">
+               <div className="relative w-[100%] h-[300px] md:h-[600px] mb-10">
                <Image fill  src={us} alt="US"/>
                </div>
           

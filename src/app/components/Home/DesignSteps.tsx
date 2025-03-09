@@ -196,7 +196,7 @@ export default function DesignSteps() {
           setProcessPoint([
             "Problem Analysis",
             "Game Research",
-            "Flow Planning",
+            " Flow Planning",
             "Role Assignment",
             "Timeline Setup",
           ]);
@@ -217,10 +217,11 @@ export default function DesignSteps() {
         },
         onUpdate: () => {
           setProcessPoint([
-            "User Experience (UX)",
-            "Motion Design",
-            "User Interaction",
-            "Prototypes",
+            "Logic Implementation",
+            "Real-time Feedback",
+            "Performance Optimization",
+            "Feature Integration",
+            "Cross-Testing",
           ]);
         },
       },
@@ -377,10 +378,13 @@ export default function DesignSteps() {
             className="text-[#878C8E] transition-all duration-200 ease-in-out"
             ref={firstMobText}
           >
-            <h3 className="mb-4 text-2xl font-medium">Strategy</h3>
+            <h3 className="mb-4 text-2xl font-medium">
+              Decoding the Challenge
+            </h3>
             <p className="mb-4 text-lg font-light">
-              We combine all the elements and achieve successful results for our
-              clients. That's how we create something incredible.
+              Transforming a web development problem into an interactive
+              experience, we set out to craft a Mastermind game where users
+              could outsmart a computer-generated secret code.
             </p>
           </div>
         </div>
@@ -398,7 +402,7 @@ export default function DesignSteps() {
                 d="M23.557 12.018 1.352.117C.754-.204.012.173 0 .797l.059 22.406c0 .606.718.99 1.297.695L23.52 13.404c.63-.292.634-1.065.036-1.386m-7.033.977L4.178 18.849c-.195.089-.434-.04-.438-.235l-.01-4.146a.25.25 0 0 0-.187-.246l-2.506-.834c-.263-.093-.267-.41 0-.485l2.493-.843c.108-.039.2-.135.188-.238l-.022-5.703c-.004-.196.247-.327.447-.22l12.389 6.64c.211.09.2.35-.008.456"
               ></path>
             </svg>
-            Research
+            Problem Analysis
           </li>
           <li className="mb-5 flex items-center gap-4 whitespace-nowrap font-light text-white  ">
             <svg
@@ -413,7 +417,7 @@ export default function DesignSteps() {
                 d="M23.557 12.018 1.352.117C.754-.204.012.173 0 .797l.059 22.406c0 .606.718.99 1.297.695L23.52 13.404c.63-.292.634-1.065.036-1.386m-7.033.977L4.178 18.849c-.195.089-.434-.04-.438-.235l-.01-4.146a.25.25 0 0 0-.187-.246l-2.506-.834c-.263-.093-.267-.41 0-.485l2.493-.843c.108-.039.2-.135.188-.238l-.022-5.703c-.004-.196.247-.327.447-.22l12.389 6.64c.211.09.2.35-.008.456"
               ></path>
             </svg>
-            User Journeys/Flows
+            Game Research
           </li>
           <li className="mb-5 flex items-center gap-4 whitespace-nowrap font-light text-white  ">
             <svg
@@ -428,7 +432,7 @@ export default function DesignSteps() {
                 d="M23.557 12.018 1.352.117C.754-.204.012.173 0 .797l.059 22.406c0 .606.718.99 1.297.695L23.52 13.404c.63-.292.634-1.065.036-1.386m-7.033.977L4.178 18.849c-.195.089-.434-.04-.438-.235l-.01-4.146a.25.25 0 0 0-.187-.246l-2.506-.834c-.263-.093-.267-.41 0-.485l2.493-.843c.108-.039.2-.135.188-.238l-.022-5.703c-.004-.196.247-.327.447-.22l12.389 6.64c.211.09.2.35-.008.456"
               ></path>
             </svg>
-            Personas
+            Flow Planning
           </li>
           <li className="mb-5 flex items-center gap-4 whitespace-nowrap font-light text-white  ">
             <svg
@@ -443,7 +447,7 @@ export default function DesignSteps() {
                 d="M23.557 12.018 1.352.117C.754-.204.012.173 0 .797l.059 22.406c0 .606.718.99 1.297.695L23.52 13.404c.63-.292.634-1.065.036-1.386m-7.033.977L4.178 18.849c-.195.089-.434-.04-.438-.235l-.01-4.146a.25.25 0 0 0-.187-.246l-2.506-.834c-.263-.093-.267-.41 0-.485l2.493-.843c.108-.039.2-.135.188-.238l-.022-5.703c-.004-.196.247-.327.447-.22l12.389 6.64c.211.09.2.35-.008.456"
               ></path>
             </svg>
-            Competitor
+            Role Assignment Competitor
           </li>
           <li className="mb-5 flex items-center gap-4 whitespace-nowrap font-light text-white  ">
             <svg
@@ -458,7 +462,7 @@ export default function DesignSteps() {
                 d="M23.557 12.018 1.352.117C.754-.204.012.173 0 .797l.059 22.406c0 .606.718.99 1.297.695L23.52 13.404c.63-.292.634-1.065.036-1.386m-7.033.977L4.178 18.849c-.195.089-.434-.04-.438-.235l-.01-4.146a.25.25 0 0 0-.187-.246l-2.506-.834c-.263-.093-.267-.41 0-.485l2.493-.843c.108-.039.2-.135.188-.238l-.022-5.703c-.004-.196.247-.327.447-.22l12.389 6.64c.211.09.2.35-.008.456"
               ></path>
             </svg>
-            Analysis
+            Timeline Setup
           </li>
           <li className="mb-5 flex items-center gap-4 whitespace-nowrap font-light text-white  ">
             <svg
@@ -473,7 +477,7 @@ export default function DesignSteps() {
                 d="M23.557 12.018 1.352.117C.754-.204.012.173 0 .797l.059 22.406c0 .606.718.99 1.297.695L23.52 13.404c.63-.292.634-1.065.036-1.386m-7.033.977L4.178 18.849c-.195.089-.434-.04-.438-.235l-.01-4.146a.25.25 0 0 0-.187-.246l-2.506-.834c-.263-.093-.267-.41 0-.485l2.493-.843c.108-.039.2-.135.188-.238l-.022-5.703c-.004-.196.247-.327.447-.22l12.389 6.64c.211.09.2.35-.008.456"
               ></path>
             </svg>
-            Mind Mapping
+            Team Collaboration
           </li>
         </ul>
 
@@ -488,10 +492,14 @@ export default function DesignSteps() {
             className="text-[#878C8E] transition-all duration-200 ease-in-out xl:w-2/3"
             ref={secondMobText}
           >
-            <h3 className="mb-4 text-2xl font-medium">Wireframes</h3>
+            <h3 className="mb-4 text-2xl font-medium">
+              {" "}
+              Engineering the Mind Game
+            </h3>
             <p className="mb-4 text-lg font-light">
-              We craft detailed wireframes and prototypes to define user
-              journeys, ensuring clarity and seamless functionality.
+              From sleek UI design to complex game logic, we fused creativity
+              with technical skills, ensuring a smooth and engaging gameplay
+              experience.
             </p>
           </div>
         </div>
@@ -509,7 +517,7 @@ export default function DesignSteps() {
                 d="M23.557 12.018 1.352.117C.754-.204.012.173 0 .797l.059 22.406c0 .606.718.99 1.297.695L23.52 13.404c.63-.292.634-1.065.036-1.386m-7.033.977L4.178 18.849c-.195.089-.434-.04-.438-.235l-.01-4.146a.25.25 0 0 0-.187-.246l-2.506-.834c-.263-.093-.267-.41 0-.485l2.493-.843c.108-.039.2-.135.188-.238l-.022-5.703c-.004-.196.247-.327.447-.22l12.389 6.64c.211.09.2.35-.008.456"
               ></path>
             </svg>
-            User Experience (UX)
+            Logic Implementation
           </li>
           <li className="mb-6 flex items-center gap-4 whitespace-nowrap font-light text-white  ">
             <svg
@@ -524,7 +532,7 @@ export default function DesignSteps() {
                 d="M23.557 12.018 1.352.117C.754-.204.012.173 0 .797l.059 22.406c0 .606.718.99 1.297.695L23.52 13.404c.63-.292.634-1.065.036-1.386m-7.033.977L4.178 18.849c-.195.089-.434-.04-.438-.235l-.01-4.146a.25.25 0 0 0-.187-.246l-2.506-.834c-.263-.093-.267-.41 0-.485l2.493-.843c.108-.039.2-.135.188-.238l-.022-5.703c-.004-.196.247-.327.447-.22l12.389 6.64c.211.09.2.35-.008.456"
               ></path>
             </svg>
-            Motion Design
+            Real-time Feedback
           </li>
           <li className="mb-6 flex items-center gap-4 whitespace-nowrap font-light text-white  ">
             <svg
@@ -539,7 +547,7 @@ export default function DesignSteps() {
                 d="M23.557 12.018 1.352.117C.754-.204.012.173 0 .797l.059 22.406c0 .606.718.99 1.297.695L23.52 13.404c.63-.292.634-1.065.036-1.386m-7.033.977L4.178 18.849c-.195.089-.434-.04-.438-.235l-.01-4.146a.25.25 0 0 0-.187-.246l-2.506-.834c-.263-.093-.267-.41 0-.485l2.493-.843c.108-.039.2-.135.188-.238l-.022-5.703c-.004-.196.247-.327.447-.22l12.389 6.64c.211.09.2.35-.008.456"
               ></path>
             </svg>
-            User Interaction
+            Performance Optimization
           </li>
           <li className="mb-6 flex items-center gap-4 whitespace-nowrap font-light text-white  ">
             <svg
@@ -554,7 +562,7 @@ export default function DesignSteps() {
                 d="M23.557 12.018 1.352.117C.754-.204.012.173 0 .797l.059 22.406c0 .606.718.99 1.297.695L23.52 13.404c.63-.292.634-1.065.036-1.386m-7.033.977L4.178 18.849c-.195.089-.434-.04-.438-.235l-.01-4.146a.25.25 0 0 0-.187-.246l-2.506-.834c-.263-.093-.267-.41 0-.485l2.493-.843c.108-.039.2-.135.188-.238l-.022-5.703c-.004-.196.247-.327.447-.22l12.389 6.64c.211.09.2.35-.008.456"
               ></path>
             </svg>
-            Prototypes
+            Feature Integration
           </li>
           <li className="mb-6 flex items-center gap-4 whitespace-nowrap font-light text-white  ">
             <svg
@@ -569,7 +577,7 @@ export default function DesignSteps() {
                 d="M23.557 12.018 1.352.117C.754-.204.012.173 0 .797l.059 22.406c0 .606.718.99 1.297.695L23.52 13.404c.63-.292.634-1.065.036-1.386m-7.033.977L4.178 18.849c-.195.089-.434-.04-.438-.235l-.01-4.146a.25.25 0 0 0-.187-.246l-2.506-.834c-.263-.093-.267-.41 0-.485l2.493-.843c.108-.039.2-.135.188-.238l-.022-5.703c-.004-.196.247-.327.447-.22l12.389 6.64c.211.09.2.35-.008.456"
               ></path>
             </svg>
-            Customer Experience
+            Cross-Testing
           </li>
         </ul>
 
@@ -584,10 +592,13 @@ export default function DesignSteps() {
             className=" text-[#878C8E] transition-all duration-200 ease-in-out xl:w-2/3 "
             ref={thirdMobText}
           >
-            <h3 className="mb-4 text-2xl font-medium">User Interface</h3>
+            <h3 className="mb-4 text-2xl font-medium">
+              Breaking the Code, Building Bonds
+            </h3>
             <p className="mb-4 text-lg font-light">
-              We craft detailed wireframes and prototypes to define user
-              journeys, ensuring clarity and seamless functionality.
+              More than just writing code, this challenge sharpened our
+              problem-solving skills and strengthened our teamwork, proving that
+              great solutions emerge from great collaboration.
             </p>
           </div>
         </div>
@@ -605,7 +616,7 @@ export default function DesignSteps() {
                 d="M23.557 12.018 1.352.117C.754-.204.012.173 0 .797l.059 22.406c0 .606.718.99 1.297.695L23.52 13.404c.63-.292.634-1.065.036-1.386m-7.033.977L4.178 18.849c-.195.089-.434-.04-.438-.235l-.01-4.146a.25.25 0 0 0-.187-.246l-2.506-.834c-.263-.093-.267-.41 0-.485l2.493-.843c.108-.039.2-.135.188-.238l-.022-5.703c-.004-.196.247-.327.447-.22l12.389 6.64c.211.09.2.35-.008.456"
               ></path>
             </svg>
-            User Experience (UX)
+            Team Brainstorming
           </li>
           <li className="mb-6 flex items-center gap-4 whitespace-nowrap font-light text-white  ">
             <svg
@@ -620,7 +631,7 @@ export default function DesignSteps() {
                 d="M23.557 12.018 1.352.117C.754-.204.012.173 0 .797l.059 22.406c0 .606.718.99 1.297.695L23.52 13.404c.63-.292.634-1.065.036-1.386m-7.033.977L4.178 18.849c-.195.089-.434-.04-.438-.235l-.01-4.146a.25.25 0 0 0-.187-.246l-2.506-.834c-.263-.093-.267-.41 0-.485l2.493-.843c.108-.039.2-.135.188-.238l-.022-5.703c-.004-.196.247-.327.447-.22l12.389 6.64c.211.09.2.35-.008.456"
               ></path>
             </svg>
-            Motion Design
+            Strategic Debugging
           </li>
           <li className="mb-6 flex items-center gap-4 whitespace-nowrap font-light text-white  ">
             <svg
@@ -635,7 +646,7 @@ export default function DesignSteps() {
                 d="M23.557 12.018 1.352.117C.754-.204.012.173 0 .797l.059 22.406c0 .606.718.99 1.297.695L23.52 13.404c.63-.292.634-1.065.036-1.386m-7.033.977L4.178 18.849c-.195.089-.434-.04-.438-.235l-.01-4.146a.25.25 0 0 0-.187-.246l-2.506-.834c-.263-.093-.267-.41 0-.485l2.493-.843c.108-.039.2-.135.188-.238l-.022-5.703c-.004-.196.247-.327.447-.22l12.389 6.64c.211.09.2.35-.008.456"
               ></path>
             </svg>
-            User Interaction
+            Idea Refinement
           </li>
           <li className="mb-6 flex items-center gap-4 whitespace-nowrap font-light text-white  ">
             <svg
@@ -665,7 +676,7 @@ export default function DesignSteps() {
                 d="M23.557 12.018 1.352.117C.754-.204.012.173 0 .797l.059 22.406c0 .606.718.99 1.297.695L23.52 13.404c.63-.292.634-1.065.036-1.386m-7.033.977L4.178 18.849c-.195.089-.434-.04-.438-.235l-.01-4.146a.25.25 0 0 0-.187-.246l-2.506-.834c-.263-.093-.267-.41 0-.485l2.493-.843c.108-.039.2-.135.188-.238l-.022-5.703c-.004-.196.247-.327.447-.22l12.389 6.64c.211.09.2.35-.008.456"
               ></path>
             </svg>
-            Customer Experience
+            Communication Boost
           </li>
         </ul>
       </div>
