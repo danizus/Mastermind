@@ -79,7 +79,7 @@ const TestimonialBgAnimation = () => {
       viewBox="0 0 1748 967"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="absolute bottom-0 right-0 z-10 h-auto w-[90%] max-w-[1450px]"
+      className="absolute bottom-0 right-0 -z-10 h-auto w-[90%] max-w-[1450px]"
     >
       <path
         id="footerpath1"

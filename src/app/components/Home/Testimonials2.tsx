@@ -13,6 +13,7 @@ import testimonial6 from "@images/aiman.jpg";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Lenis from "@studio-freight/lenis";
+import { Autoplay } from "swiper/modules";
 
 gsap.registerPlugin(useGSAP);
 
@@ -361,7 +362,7 @@ export default function Testimonials2() {
       </div>
       <div className="block md:hidden">
         <Swiper
-          autoplay={{ delay: 3000 }}
+         modules={[Autoplay]}
           spaceBetween={16} // Adjust spacing between slides
           slidesPerView={1.2}
           grabCursor={true}
